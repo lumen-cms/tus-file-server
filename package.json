@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "TZ=utc NODE_ENV=development ava tests/**/*.js --verbose",
-    "dev": "TZ=utc NODE_ENV=development nodemon src/index.js",
-    "serve": "TZ=utc NODE_ENV=development node src/index.js",
-    "start": "TZ=utc NODE_ENV=production node dist/index.js"
+    "dev:local": "TZ=utc NODE_ENV=development nodemon src/index.js",
+    "dev": "TZ=utc NODE_ENV=production nodemon src/index.js",
+    "start": "TZ=utc NODE_ENV=production node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/lumen-cms/tus-file-server#readme",
   "dependencies": {
-    "tus-node-server": "^0.2.11"
+    "dotenv": "^6.0.0",
+    "tus-node-server": "https://github.com/mycujoo/tus-node-server.git"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"

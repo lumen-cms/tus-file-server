@@ -1,0 +1,29 @@
+{
+  "name": "tus-file-server",
+  "version": "1.0.0",
+  "description": "Tus protocol server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "TZ=utc NODE_ENV=development ava tests/**/*.js --verbose",
+    "dev": "TZ=utc NODE_ENV=development nodemon src/index.js",
+    "serve": "TZ=utc NODE_ENV=development node src/index.js",
+    "start": "TZ=utc NODE_ENV=production node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumen-cms/tus-file-server.git"
+  },
+  "author": "Dominic Garms <djgarms@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lumen-cms/tus-file-server/issues"
+  },
+  "homepage": "https://github.com/lumen-cms/tus-file-server#readme",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "tus-node-server": "^0.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

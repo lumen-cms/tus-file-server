@@ -1,0 +1,8 @@
+/**
+ Export to JSON plugin for PHPMyAdmin
+ @version 0.1
+ */
+
+/* Database 'db317912' */ 
+<br />
+<b>Fatal error</b>:  Allowed memory size of 52428800 bytes exhausted (tried to allocate 47449500 bytes) in <b>/kunden/317912_13503/webseiten/praktikumsanzeigen/typo3conf/ext/phpmyadmin/res/phpMyAdmin-3.4.3.2-all-languages/libraries/export/json.php</b> on line <b>168</b><br />

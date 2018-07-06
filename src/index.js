@@ -23,7 +23,6 @@ if (isProduction) {
     })
 }
 
-
 server.on(EVENTS.EVENT_UPLOAD_COMPLETE, (event) => {
     console.log(`Upload complete for file `, JSON.stringify(event.file))
 })

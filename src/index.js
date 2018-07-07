@@ -14,7 +14,8 @@ if (isProduction) {
         region: process.env.AWS_REGION,
         partSize: 8 * 1024 * 1024, // each uploaded part will have ~8MB,
         tmpDirPrefix: 'tus-s3-store',
-        path: '/files'
+        path: '/files',
+        // directory: process.env.AWS_HOST
     })
 } else {
     server.datastore = new FileStore({
